@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hahaTest';
+  count: number = 0;
+  counter(num: string,type: String){
+
+
+    this.count=parseInt(num);
+
+    if (this.count > 0){
+      type=='plus'?this.count++:this.count--
+    }
+    
+    else{
+      type=='plus'?this.count++:this.count=0
+      
+    } 
+    
+    
+  }
+  
 }
