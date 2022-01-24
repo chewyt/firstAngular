@@ -1,7 +1,22 @@
-<h1>{{title}}</h1>
-<!-- <app-counter></app-counter> -->
-<h2>Counter: {{count}}</h2>
-<p>Quantity: <input type="number"  #qty name="" placeholder={{count}}  value={{count}} id=""></p>
-<button (click)="counter(qty.value,'plus')">+</button>
-<br>
-<button (click)="counter(qty.value,'minus')"> - </button>
+
+
+<div class="custom text-center">
+  <div>
+    <h1 class="mt-5 display-4 fst-italic fw-bold ">{{title}}</h1>
+  </div>
+  <!-- <app-counter></app-counter> -->
+  <h2>Counter: {{count}}</h2>
+  <p class="mt-2">Quantity: <input type="number"  #qty name="" placeholder={{count}}  value={{count}} id=""></p>
+  <button (click)="counter(qty.value,'plus')">+</button>
+  
+  <button (click)="counter(qty.value,'minus')"> - </button>
+  <div class="d--sm-grid ">
+    <app-counter></app-counter>
+    <app-counter></app-counter>
+    <app-counter></app-counter>
+    <app-counter></app-counter>
+    <app-counter></app-counter>
+    <app-counter></app-counter>
+    <app-counter></app-counter>
+  </div>
+</div>

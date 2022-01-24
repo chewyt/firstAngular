@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hahaTest';
+  title = 'Pizza Quantity';
   count: number = 0;
   counter(num: string,type: String){
 
