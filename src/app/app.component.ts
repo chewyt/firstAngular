@@ -13,6 +13,12 @@ export class AppComponent {
 
     this.count=parseInt(num);
 
+    if (this.count>10) {
+      alert("You cannot finish it up BODOH!");
+      this.count=0;
+    }
+
+
     if (this.count > 0){
       type=='plus'?this.count++:this.count--
     }

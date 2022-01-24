@@ -1,14 +1,12 @@
-
-
 <div class="custom text-center">
   <div>
     <h1 class="mt-5 display-4 fst-italic fw-bold ">{{title}}</h1>
   </div>
   <!-- <app-counter></app-counter> -->
   <h2>Counter: {{count}}</h2>
-  <p class="mt-2">Quantity: <input type="number"  #qty name="" placeholder={{count}}  value={{count}} id=""></p>
+  <p class="mt-2">Quantity: <input type="number" #qty name="" placeholder={{count}} value={{count}} id=""></p>
   <button class=" btn-sm btn-primary" (click)="counter(qty.value,'plus')">Add Pizza !!!</button>
-  
+
   <button class="btn-sm btn-danger" (click)="counter(qty.value,'minus')"> Remove Pizza :( </button>
   <div class="d--sm-grid ">
     <app-counter></app-counter>
